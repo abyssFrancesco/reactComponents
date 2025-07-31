@@ -3,6 +3,7 @@ import "./Home.css";
 import Button from "../components/button/Button.jsx";
 import lightLogo from "../assets/Icon.svg";
 import darkLogo from "../assets/dark-Icon.svg";
+import Card from "../components/card/Card.jsx";
 
 function Home() {
   return (
@@ -33,6 +34,9 @@ function Home() {
             onClick={() => alert("Secondary Light Button")}
             status="disabled"
           />
+        </div>
+        <div className="card-box">
+          <Card/>
         </div>
       </div>
     </>
