@@ -1,0 +1,14 @@
+.B{
+    border: 2px solid red;
+}
+
+.home-box {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh; /* invece di min-height */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
