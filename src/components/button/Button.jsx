@@ -5,7 +5,7 @@ function Button({ label, variant, type, src, onClick, status }) {
   function handleClick() {
     if (status !== "disabled") {
       onClick();
-    }else{console.log(`Il pulsante ${type} è disabilitato`)};
+    }else{console.log(`Il pulsante ${type} ${variant} è disabilitato`)};
   }
 
   return (

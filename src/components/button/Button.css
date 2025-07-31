@@ -12,34 +12,51 @@
 .button img {
   width: 20px;
 }
-
-.light.active{
+/* Primary */
+.Primary.light.active{
   background: #fff;
 }
-.light.active label {
+.Primary.light.active label {
   color: #000000;
 }
-.light.active:hover {
+.Primary.light.active:hover {
   background: #d8e2ea;
 }
-.dark.active {
+.Primary.dark.active {
      background: #333333;
 }
-.dark.active label{
+.Primary.dark.active label{
     color: #fff;
 }
-.dark.active:hover{
+.Primary.dark.active:hover{
     background: #494949;
 }
-.light.disabled {
+/* Primary disabled */
+.Primary.light.disabled {
     background: #757575;
 }
-.light.disabled label {
+.Primary.light.disabled label {
     text-decoration: line-through;
 }
-.dark.disabled {
+.Primary.dark.disabled {
     background: #444444;
 }
-.dark.disabled label {
+.Primary.dark.disabled label {
+    text-decoration: line-through;
+}
+/* Secondary */
+.Secondary.light.active{
+    background: #858585;
+}
+.Secondary.light.active label{
+    color: #444444;
+}
+.Secondary.light.active:hover{
+    background: rgb(117, 117, 117) ;
+}
+.Secondary.light.disabled{
+    background: #bbbbbb;
+}
+.Secondary.light.disabled label{
     text-decoration: line-through;
 }
