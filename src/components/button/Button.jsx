@@ -1,15 +1,22 @@
 import React from "react";
 import "./Button.css";
-import Logo from "../../assets/react.svg";
 
-function Button() {
-  console.log("Button");
+function Button({ label, variant, type, src, onClick, status }) {
+  function handleClick() {
+    if (status !== "disabled") {
+      onClick();
+    }else{console.log(`Il pulsante ${type} è disabilitato`)};
+  }
+
   return (
     <>
-      <div className="button B">
-        <img src={Logo} alt="" />
-        <p>Button</p>
-      </div>
+      <button
+        className={`button ${variant} ${type} ${status}`}
+        onClick={handleClick}
+      >
+        <img src={src} alt="Pulsante" />
+        <label htmlFor="">{label}</label>
+      </button>
     </>
   );
 }
